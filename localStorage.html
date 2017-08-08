@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			本地存储: HTML5中出现的window下的属性。
+				sessionStorage / localStorage
+
+			专门用来前端存储数据的。可以说是前端的数据库，一样存在浏览器中。
+
+			localStorage
+				localStorage存储的内容可以比cookie更多，比cookie操作起来更便捷
+				每个域名 5M左右，未来还会扩展
+				
+				设置
+					localStorage.setItem(key,val);
+				获取
+					localStorage.getItem(key);
+				移除				
+					localStorage.removeItem(key);
+				清空
+					localStorage.clear(); 
+
+				生命周期
+					只要不删除就一直存在
+
+				优缺点
+					http://www.cnblogs.com/st-leslie/p/5617130.html
+
+				事件
+					storage事件
+						能够监听同域同浏览器的兄弟页面数据并且实时更新
+						但是只有手动删除浏览器的数据才会在*当前*页面上触发这个事件。
+					window.addEventListener('storage',function(ev){
+						console.log(ev);
+						//...
+					});
+		*/
+	</script>
+</body>
+</html>
