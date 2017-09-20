@@ -11,19 +11,24 @@
 				sessionStorage / localStorage
 
 			专门用来前端存储数据的。可以说是前端的数据库，一样存在浏览器中。
+			ps：
+				userData
+					IE特有的浏览器存储，仅IE有效
+				session
+					为服务器端的存储技术
 
 			localStorage
 				localStorage存储的内容可以比cookie更多，比cookie操作起来更便捷
 				每个域名 5M左右，未来还会扩展
-				
+
 				设置
 					localStorage.setItem(key,val);
 				获取
 					localStorage.getItem(key);
-				移除				
+				移除
 					localStorage.removeItem(key);
 				清空
-					localStorage.clear(); 
+					localStorage.clear();
 
 				生命周期
 					只要不删除就一直存在
@@ -40,6 +45,16 @@
 						//...
 					});
 		*/
+	let arr = [
+		{day:0,num:11},
+		{day:1,num:5},
+		{day:2,num:8},
+		{day:3,num:12},
+		{day:4,num:22},
+		{day:5,num:25},
+		{day:6,num:16},
+	];
+	localStorage.setItem('pageView', JSON.stringify(arr));
 	</script>
 </body>
 </html>
